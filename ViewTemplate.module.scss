@@ -1,0 +1,239 @@
+.viewTemplateContainer__Div {
+    background: #E5E5E5;
+}
+.templateDetailsHeader {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 20px 0;
+    a {
+        color: #333333;
+        margin-top: 5px;
+        &:focus{
+            color: #333333;
+        }
+    }
+    .headerDetails__Div {
+        width: 70%;
+    }
+    .headerTitle {
+        font-weight: 300;
+        font-size: 28px;
+        line-height: 38px;
+        color: #333333;
+        margin-left: 15px;
+    }
+    .headerSubtitle {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 19px;
+        color: #333333;
+        margin-left: 40px;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+    .templateType {
+        color: #219653;
+    }
+    
+    .btnContainer {
+        display: flex;
+        width: 30%;
+        // height: 42px;
+        // width: 166px;
+        // background: #333333;
+        // color: #ffffff;
+        // border-radius: 8px;
+        // display: flex;
+        // font-weight: 600;
+        // align-items: center;
+        // justify-content: center;
+        // font-weight: bold;
+        // font-size: 14px;
+        // line-height: 19px;
+        // cursor: pointer;
+        .btnIcons {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2F6DC8;
+            border-radius: 8px;
+            margin-right: 10px;
+            &:hover {
+                background: #2F6DC8;
+                color: white;
+                cursor: pointer;
+            }
+        }
+        .activeTemplateBtn {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            color: #2F6DC8;
+            margin-left: 20px;
+            cursor: pointer;
+            .activeTemplateText {
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+        .btnDivider {
+            border-left: 1px solid #E0E0E0;
+            height: 25px;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-top: 8px;
+        }
+    }
+}
+.dividerBorder {
+    border-bottom: 1px solid #E0E0E0;
+    margin-left: 40px;
+}
+
+.tabContainer__Div {
+    display: flex;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333;
+    margin-left: 40px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    .activeTemplateTab {
+        &::after{
+            content: " ";
+            display: block;
+            position: absolute;
+            height: 4px;
+            background: black;
+            width: 60%;
+            bottom: -5px;
+            left: 20%;
+            border-radius: 8px;
+        }
+    }
+    div {
+        margin-right: 20px;
+        position: relative;
+    }
+}
+
+
+// overview tab 
+
+.overviewFirstTab {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-bottom: 50px;
+}
+.overviewThirdTab {
+    margin-left: 40px;
+    border-top: 1px solid #E0E0E0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #E0E0E0;
+}
+.overviewSecondTab {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .overviewSecondTabHeader {
+        margin-bottom: 30px;
+        font-weight: 300;
+        font-size: 28px;
+        line-height: 38px;
+        color: #333333;
+    }
+}
+.overviewFourTab {
+    border-top: 1px solid #E0E0E0;
+    padding-top: 40px;
+    margin-left: 40px;
+}
+.templatedesc__Div {
+    position: relative;
+}
+.overviewTabSplit {
+    display: flex;
+    margin-bottom: 30px;
+    .overviewTabSplit__one {
+        width: 48%;
+        position: relative;
+    }
+    .overviewTabSplit__two {
+        width: 4%;
+    }
+    .overviewTabSplit__three {
+        width: 48%;
+        position: relative;
+    }
+}
+.inputLable {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.inputData {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+
+// field input tab
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: 40px;
+  }
+  table thead tr th{
+    border-bottom: 1px solid #000000;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #333333;
+}
+  
+  td, th {
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+    padding: 20px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  .fieldName {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #333333;
+  }
+  .fieldTypeName {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: #333333;
+  }
+
+  // mapping
+  input:disabled {
+    height: 35px;
+    border-radius: 8px;
+    font-size: 15px;
+    padding-left: 10px;
+  }
+  
